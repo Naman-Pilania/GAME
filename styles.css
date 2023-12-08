@@ -1,0 +1,64 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(10, 40px); /* Adjust the size as needed */
+            grid-template-rows: repeat(10, 40px); /* Adjust the size as needed */
+        }
+
+        .square {
+            position: relative;
+            width: 40px; /* Adjust the size as needed */
+            height: 40px; /* Adjust the size as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000; /* Add border for better visibility */
+            color: white;
+        }
+
+        .white {
+            background-color: #fff;
+            color: black;
+        }
+
+        .black {
+            background-color: #000;
+        }
+
+        .red-spot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .button {
+            padding: 10px;
+            cursor: pointer;
+            border: #000;
+            background-color: blue;
+        }
+        .button1 {
+            padding: 10px;
+            cursor: pointer;
+            border: #000;
+            background-color: green;
+        }
