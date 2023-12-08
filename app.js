@@ -14,9 +14,7 @@ function createChessBoard(rows, columns) {
             const square = document.createElement('div');
             square.classList.add('square');
             square.classList.add((i + j) % 2 === 0 ? 'black' : 'white');
-            if((i+j)%2===0){
-                square.textContent = count++;
-            }
+
             square.textContent = count++;
 
             boardContainer.appendChild(square);
