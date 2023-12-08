@@ -36,7 +36,8 @@ function addRedSpot(position) {
 
 function rollDice() {
     const diceResult = Math.floor(Math.random() * 6) + 1;
-    alert(`Dice rolled: ${diceResult}`);
+    displayDiceResult(diceResult);
+
     
     // Update the current position
     currentPosition += diceResult;
@@ -49,7 +50,10 @@ function rollDice() {
     // Update the red spot
     updateRedSpot();
 }
-
+function displayDiceResult(result) {
+    const diceResultContainer = document.getElementById('diceResult');
+    diceResultContainer.textContent = `Dice rolled: ${result}`;
+}
 function resetBoard() {
     currentPosition = 1;
     updateRedSpot();
